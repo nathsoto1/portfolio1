@@ -1,0 +1,26 @@
+.projects {
+  background: #f8fafc;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+#current .projects-grid {
+  display: flex;
+  justify-content: center;
+}
+
+#current .project-card {
+  max-width: 370px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

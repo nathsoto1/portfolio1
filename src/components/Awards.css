@@ -1,0 +1,39 @@
+.awards {
+  background: white;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.award-card {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.award-card h3 {
+  color: var(--darker);
+  margin-bottom: 0.5rem;
+}
+
+.award-card p {
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+}

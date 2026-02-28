@@ -1,0 +1,117 @@
+.resume {
+  background: white;
+}
+
+.resume-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  height: calc(100% - 20px);
+  width: 2px;
+  background: var(--primary);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  padding: 0.5rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.timeline-content {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+/* ── Skill Bars ── */
+.skills-list {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.skill-category h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0f2fe;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
