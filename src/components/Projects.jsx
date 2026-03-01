@@ -32,6 +32,26 @@ const projectsData = [
       { icon: 'fab fa-github', label: 'GitHub', href: '#' },
     ],
   },
+  {
+    img: 'assets/gym.png',
+    alt: 'Gym Database',
+    title: 'Gym Database',
+    desc: 'A Python based gym database project for managing and querying gym related data.',
+    tags: ['Python', 'SQL'],
+    links: [
+      { icon: 'fab fa-github', label: 'GitHub', href: 'https://github.com/nathsoto1/gym-database' },
+    ],
+  },
+  {
+    img: 'assets/ai_species.png',
+    alt: 'CSC 4444 AI Final Project',
+    title: 'AI Animal Species Identifier',
+    desc: 'A web app powered by a Residual CNN that lets users upload an image and identify the animal and its specific species. Trained on curated datasets of cats, dogs, birds, and lizards to maximize accuracy',
+    tags: ['Python', 'ResNet', 'Deep Learning'],
+    links: [
+      { icon: 'fab fa-github', label: 'GitHub', href: 'https://github.com/sngu114/CSC-4444-AI-Group-G-Final-Project' },
+    ],
+  },
 ];
 
 export default function Projects() {
